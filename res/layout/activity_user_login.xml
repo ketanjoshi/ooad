@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sample.sampleworld.UserLogin"
+    android:background="@drawable/abc_ab_share_pack_holo_light" >
+
+    <TextView
+        android:id="@+id/email_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/login_textview"
+        android:layout_alignLeft="@+id/login_textview"
+        android:text="@string/email_id"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/email_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/email_textview"
+        android:layout_alignLeft="@id/email_textview"
+        android:background="@drawable/abc_ab_bottom_solid_light_holo"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/pass_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/email_edittext"
+        android:layout_alignLeft="@id/email_edittext"
+        android:text="@string/password"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/pass_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/pass_textview"
+        android:layout_alignLeft="@id/pass_textview"
+        android:background="@drawable/abc_ab_bottom_solid_light_holo"
+        android:inputType="textPassword" />
+    
+    <Button
+        android:id="@+id/logging_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/pass_edittext"
+        android:layout_alignLeft="@id/pass_edittext"
+        android:text="@string/login" />
+    
+</RelativeLayout>

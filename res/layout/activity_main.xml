@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sample.sampleworld.MainActivity"
+    android:background="@drawable/abc_ab_share_pack_holo_light" >
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/title_textview"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textSize="40sp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/abc_search_url_text_pressed"
+        android:text="@string/str_title" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/welcome_textview"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/title_textview"
+        android:textColor="@color/abc_search_url_text_pressed"
+        android:text="@string/str_welcome"
+        />
+
+    <Button
+        android:id="@+id/reg_button"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:layout_below="@id/welcome_textview"
+        />
+    
+    <Button
+        android:id="@+id/login_button"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:layout_below="@id/reg_button"
+        />
+    
+</RelativeLayout>
